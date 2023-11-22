@@ -1,5 +1,4 @@
-# demoHtml
-A Demo HTML Site
+# A Demo HTML Site
 
 # Author
 Denbeuker
