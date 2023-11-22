@@ -1,14 +1,8 @@
-html {
-  background-color: lightblue;
-}
+
 body {
-  background: blue;
+  background-color: lightblue;
 }
 
 h1 {
   color: grey;
-}
-
-img {
-  margin-left: 500px;
 }
