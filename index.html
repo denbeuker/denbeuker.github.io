@@ -12,13 +12,28 @@
 <p><a href="https://github.com/denbeuker/python" target="_blank">Python Projects</a></p>
 <p><a href="https://github.com/denbeuker/WriteUps" target="_blank">CTF writeups</a></p>
 
-<h3 onclick="myFunction(this, 'red')">Click me to change my color.</h3>
+<h3 onclick="myFunction(this)">Click me to keep changing my color.</h3>
 
 <script>
-function myFunction(element, color) {
-  element.style.color = color;
+function myFunction(element) {
+  // Generate a random color
+  var randomColor = getRandomColor();
+
+  // Set the color of the element to the generated color
+  element.style.color = randomColor;
+}
+
+// This function generates a random hex color value
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
 </script>
+
 
 
 
